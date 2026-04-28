@@ -19,7 +19,7 @@ function App() {
   const getProducts = async () => {
     try {
       // Faz requisição para o backend
-      const res = await axios(`http://localhost:4000/`)
+      const res = await axios(`${process.env.REACT_APP_API_URL}/`)
 
       // Mostra os dados no console (debug)
       console.log(res.data)
