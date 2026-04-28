@@ -11,7 +11,7 @@ import productsRouter from './router/router.js';
 const app = express();
 
 // Define a porta onde o servidor vai rodar
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 dotenv.config();
 
