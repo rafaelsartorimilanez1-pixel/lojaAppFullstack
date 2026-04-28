@@ -13,7 +13,6 @@ const app = express();
 // Define a porta onde o servidor vai rodar
 const port = process.env.PORT || 4000;
 
-dotenv.config();
 
 // Middleware para interpretar dados de formulários (application/x-www-form-urlencoded)
 app.use(express.urlencoded({ extended: true }));
